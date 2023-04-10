@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "question": "When Should we used context API?",
+    "answer": "Context is primarily used when some data needs to be accessible by many components at different nesting levels. Apply it sparingly because it makes component reuse more difficult. If you only want to avoid passing some props through many levels, component composition is often a simpler solution than context"
+  },
+  {
+    "id": 2,
+    "question": "What is custom hooks?",
+    "answer": "Custom Hooks are a mechanism to reuse stateful logic (such as setting up a subscription and remembering the current value), but every time you use a custom Hook, all state and effects inside of it are fully isolated."
+  },
+  {
+    "id": 3,
+    "question": "What is useRef?",
+    "answer": "useRef() only returns one item. It returns an Object called current . When we initialize useRef we set the initial value: useRef(0) . It's like doing this: const count = {current: 0} . We can access the count by using count.current.useRef work: useRef returns a mutable ref object whose . current property is initialized to the passed argument ( initialValue ). The returned object will persist for the full lifetime of the component. Essentially, useRef is like a “box” that can hold a mutable value in its ."
+  },
+  {
+    "id": 4,
+    "question": "What is useMemo?",
+    "answer": "The useMemo is a hook used in the functional component of react that returns a memoized value. In Computer Science, memoization is a concept used in general when we don't need to recompute the function with a given argument for the next time as it returns the cached result. A memoized function remembers the results of output for a given set of inputs. For example, if there is a function to add two numbers, and we give the parameter as 1 and 2 for the first time the function will add these two numbers and return 3, but if the same inputs come again then we will return the cached value i.e 3 and not compute with the add function again. In react also, we use this concept, whenever in the React component, the state and props do not change the component and the component does not re-render, it shows the same output. The useMemo hook is used to improve performance in our React application."
+  }
+]

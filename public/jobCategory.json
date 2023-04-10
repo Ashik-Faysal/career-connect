@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "logo": "../src/assets/Icons/engineering.png",
+      "jobTitle": "Software Engineer",
+      "availablePost": "220 Jobs Available"
+    },
+    {
+      "id": 2,
+      "logo": "../src/assets/Icons/marketing.png",
+      "jobTitle": "Marketing Manager",
+      "availablePost": "100 Jobs Available"
+    },
+    {
+      "id": 3,
+      "logo": "../src/assets/Icons/accounts.png",
+      "jobTitle": "Sales Associate",
+      "availablePost": "180 Jobs Available"
+    },
+    {
+      "id": 4,
+      "logo": "../src/assets/Icons/business.png",
+      "jobTitle": "Human Resources Specialist",
+      "availablePost": "380 Jobs Available"
+    }
+  ]
+}

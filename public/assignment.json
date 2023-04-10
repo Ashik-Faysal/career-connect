@@ -1,0 +1,44 @@
+{
+  "marks": [
+    {
+      "id": 1,
+      "name": "A1",
+      "score": 58
+    },
+    {
+      "id": 2,
+      "name": "A2",
+      "score": 60
+    },
+    {
+      "id": 3,
+      "name": "A3",
+      "score": 58
+    },
+    {
+      "id": 4,
+      "name": "A4",
+      "score": 60
+    },
+    {
+      "id": 5,
+      "name": "A5",
+      "score": 60
+    },
+    {
+      "id": 6,
+      "name": "A6",
+      "score": 60
+    },
+    {
+      "id": 7,
+      "name": "A7",
+      "score": 60
+    },
+    {
+      "id": 8,
+      "name": "A8",
+      "score": 60
+    }
+  ]
+}

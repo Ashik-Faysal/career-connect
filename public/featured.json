@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "brandName": "Microsoft",
+    "logo": "https://www.microsoft.com/favicon.ico",
+    "jobTitle": "Software Engineer",
+    "location": "Redmond, WA",
+    "salary": "$120,000 - $150,000",
+    "phone": "123-456-7890",
+    "email": "jobs@microsoft.com",
+    "jobDescription": "As a software engineer at Microsoft, you'll work on cutting-edge technologies like artificial intelligence, cloud computing, and more, while collaborating with a team of experts to solve complex technical problems.",
+    "jobResponsibility": "Design and implement software solutions using best practices and emerging technologies. Collaborate with cross-functional teams to define and implement new features. Write clean, scalable, and maintainable code.",
+    "educationalRequirement": "Bachelor's or Master's degree in Computer Science or a related field.",
+    "experience": "2+ years of experience in software engineering."
+  },
+  {
+    "id": 2,
+    "brandName": "Tesla",
+    "logo": "https://www.tesla.com/favicon.ico",
+    "jobTitle": "Mechanical Engineer",
+    "location": "Fremont, CA",
+    "salary": "$90,000 - $120,000",
+    "phone": "111-222-3333",
+    "email": "jobs@tesla.com",
+    "jobDescription": "As a mechanical engineer at Tesla, you'll work on designing and developing innovative solutions for electric vehicles and sustainable energy products, while collaborating with a team of experts to tackle complex engineering challenges.",
+    "jobResponsibility": "Design, develop, and test mechanical systems and components for electric vehicles and energy products. Collaborate with cross-functional teams to develop and implement new product features. Conduct analysis and simulations to optimize product performance.",
+    "educationalRequirement": "Bachelor's or Master's degree in Mechanical Engineering or a related field.",
+    "experience": "3+ years of experience in mechanical engineering."
+  },
+  {
+    "id": 3,
+    "brandName": "Amazon",
+    "logo": "https://www.amazon.com/favicon.ico",
+    "jobTitle": "Operations Manager",
+    "location": "Seattle, WA",
+    "salary": "$100,000 - $130,000",
+    "phone": "444-555-6666",
+    "email": "jobs@amazon.com",
+    "jobDescription": "As an operations manager at Amazon, you'll be responsible for driving operational excellence and delivering outstanding customer experiences, while collaborating with a team of professionals to optimize processes and innovate new solutions.",
+    "jobResponsibility": "Lead and manage a team of associates to deliver operational excellence and exceptional customer service. Identify and implement process improvements to enhance operational efficiency and effectiveness. Develop and maintain relationships with internal and external stakeholders.",
+    "educationalRequirement": "Bachelor's or Master's degree in Business Administration, Operations Management, or a related field.",
+    "experience": "5+ years of experience in operations management."
+  },
+  {
+    "id": 4,
+    "brandName": "Apple",
+    "logo": "https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/apple/image_large.svg",
+    "jobTitle": "iOS Developer",
+    "location": "Cupertino, CA",
+    "salary": "$110,000 - $140,000",
+    "phone": "777-888-9999",
+    "email": "jobs@apple.com",
+    "jobDescription": " As an iOS developer at Apple, you'll work on designing and developing innovative software applications for Apple's mobile devices, while collaborating with a team of experts to deliver world-class user experiences.",
+    "jobResponsibility": "Design and develop high-quality mobile applications for the iOS platform. Collaborate with cross-functional teams to implement new features and improve existing ones. Write clean, efficient, and maintainable code that adheres to Apple's coding standards.",
+    "educationalRequirement": "Bachelor's or Master's degree in Computer Science or a related field.",
+    "experience": "3+ years of experience in iOS development."
+  },
+  {
+    "id": 5,
+    "brandName": "Google",
+    "logo": "https://www.google.com/favicon.ico",
+    "jobTitle": "Data Analyst",
+    "location": "Mountain View, CA",
+    "salary": "$90,000 - $120,000",
+    "phone": "000-111-2222",
+    "email": "jobs@google.com",
+    "jobDescription": "As a data analyst at Google, you'll use your analytical skills to provide insights that drive business decisions and improve products and services, while collaborating with cross-functional teams to identify and solve complex problems.",
+    "jobResponsibility": "Collect, analyze, and interpret large data sets to provide insights that drive business decisions. Collaborate with cross-functional teams to identify opportunities for data-driven improvements. Design and implement data models and visualizations to communicate insights effectively.",
+    "educationalRequirement": "Bachelor's or Master's degree in Mathematics, Statistics, Computer Science, or a related field.",
+    "experience": "2+ years of experience in data analysis."
+  }
+]

@@ -3,7 +3,7 @@ import React from "react";
 const SingleFeatured = ({ card }) => {
   const { id, logo, jobTitle, brandName, location, salary, jobStyle } = card;
   return (
-    <div>
+    <div className="bg-white">
       <div className="card w-full h-full bg-base-100 shadow-xl">
         <div className="card-body">
           <img className="w-16" src={logo} alt="" />

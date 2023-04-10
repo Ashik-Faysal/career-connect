@@ -76,5 +76,52 @@
     "jobResponsibility": "Collect, analyze, and interpret large data sets to provide insights that drive business decisions. Collaborate with cross-functional teams to identify opportunities for data-driven improvements. Design and implement data models and visualizations to communicate insights effectively.",
     "educationalRequirement": "Bachelor's or Master's degree in Mathematics, Statistics, Computer Science, or a related field.",
     "experience": "2+ years of experience in data analysis."
+  },
+  {
+    "id": 6,
+    "brandName": "Facebook",
+    "logo": "https://www.facebook.com/images/fb_icon_325x325.png",
+    "jobTitle": "Product Manager",
+    "location": "Menlo Park, CA",
+    "salary": "$120,000 - $160,000",
+    "phone": "555-666-7777",
+    "email": "jobs@facebook.com",
+    "jobStyle": "Remote",
+    "jobDescription": "As a product manager at Facebook, you'll work on defining and executing the product strategy for one of our key products, while collaborating with cross-functional teams to deliver innovative and impactful solutions.",
+    "jobResponsibility": "Lead the product strategy, roadmap, and execution for one of our key products. Work with cross-functional teams to define product requirements and prioritize feature development. Analyze market trends and customer feedback to identify product improvement opportunities.",
+    "educationalRequirement": "Bachelor's or Master's degree in Computer Science, Business Administration, or a related field.",
+    "experience": "5+ years of experience in product management or related roles."
+  },
+
+  {
+    "id": 7,
+    "brandName": "Netflix",
+    "logo": "https://www.freepnglogos.com/uploads/netflix-logo-circle-png-5.png",
+    "jobTitle": "Content Marketing Manager",
+    "location": "Los Gatos, CA",
+    "salary": "$100,000 - $130,000",
+    "phone": "888-999-0000",
+    "email": "jobs@netflix.com",
+    "jobStyle": "OnSite",
+    "jobDescription": "As a content marketing manager at Netflix, you'll work on creating and executing marketing strategies to promote our original content, while collaborating with cross-functional teams to drive customer engagement and retention.",
+    "jobResponsibility": "Create and execute marketing campaigns to promote our original content across various channels. Develop messaging and positioning for our shows and films. Analyze customer data and feedback to optimize marketing strategies.",
+    "educationalRequirement": "Bachelor's or Master's degree in Marketing, Communications, or a related field.",
+    "experience": "5+ years of experience in content marketing or related roles."
+  },
+
+  {
+    "id": 8,
+    "brandName": "SpaceX",
+    "logo": "https://www.spacex.com/static/images/share.jpg",
+    "jobTitle": "Aerospace Engineer",
+    "location": "Hawthorne, CA",
+    "salary": "$100,000 - $140,000",
+    "phone": "222-333-4444",
+    "email": "jobs@spacex.com",
+    "jobStyle": "OnSite",
+    "jobDescription": "As an aerospace engineer at SpaceX, you'll work on designing and developing cutting-edge rockets and spacecraft, while collaborating with a team of experts to revolutionize space exploration.",
+    "jobResponsibility": "Design and develop rocket and spacecraft systems, subsystems, and components. Collaborate with cross-functional teams to integrate and test systems. Conduct analysis and simulations to optimize performance and reliability.",
+    "educationalRequirement": "Bachelor's or Master's degree in Aerospace Engineering or a related field.",
+    "experience": "3+ years of experience in aerospace engineering or related roles."
   }
 ]

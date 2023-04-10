@@ -33,7 +33,7 @@ const FeaturedJobs = () => {
       </div>
       {!showAll && (
         <button
-          className="bg-blue-500 text-white py-2 px-4 rounded"
+          className="bg-blue-500 text-white py-2 px-4 rounded mx-auto block my-8"
           onClick={handleShowAll}
         >
           Show All

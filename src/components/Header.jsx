@@ -19,7 +19,7 @@ const Header = () => {
           Blog
         </Link>
       </div>
-      <button className="btn btn-info">Start Applying</button>
+      <button className="hidden md:block btn btn-info">Start Applying</button>
     </nav>
   );
 };

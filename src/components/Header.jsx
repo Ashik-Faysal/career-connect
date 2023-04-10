@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="flex justify-between items-center my_container bg-gray-200 p-6 text-black rounded-lg">
+    <nav className="md:flex justify-between items-center my_container bg-gray-200 p-6 text-black rounded-lg">
       <h2 className="text-5xl font-bold">Career Connect</h2>
-      <div className="flex  gap-4 font-semibold">
+      <div className="md:flex  gap-4 font-semibold">
         <Link className="btn-link hover:text-blue-300" to="/">
           Home
         </Link>

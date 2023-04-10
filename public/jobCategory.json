@@ -1,5 +1,4 @@
-{
-  "jobs": [
+ [
     {
       "id": 1,
       "logo": "../src/assets/Icons/engineering.png",
@@ -25,4 +24,3 @@
       "availablePost": "380 Jobs Available"
     }
   ]
-}

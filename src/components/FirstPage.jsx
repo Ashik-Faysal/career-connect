@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
+import TopBody from "./TopBody";
+import JobCategory from "./JobCategory";
+import FeaturedJobs from "./FeaturedJobs";
 
 const FirstPage = () => {
-    return (
-        <div>
-            this is FirstPage
-        </div>
-    );
+  return (
+    <div className="my_container">
+      <TopBody />
+      <JobCategory />
+      <FeaturedJobs />
+    </div>
+  );
 };
 
 export default FirstPage;

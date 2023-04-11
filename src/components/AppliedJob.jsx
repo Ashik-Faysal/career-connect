@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
+
 const AppliedJob = () => {
   return (
     <div>
-     tis a job
+      This is applied
     </div>
   );
 };
-export default AppliedJob;
 
+export default AppliedJob;

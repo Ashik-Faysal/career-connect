@@ -8,23 +8,18 @@ import FirstPage from "./components/FirstPage";
 import Statistics from "./components/Statistics";
 import AppliedJob from "./components/AppliedJob";
 import Blog from "./components/Blog";
-import JobCategory from "./components/JobCategory";
 import ErrorPage from "./components/ErrorPage";
+import JobDetails from "./components/JobDetails";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage/>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
         element: <FirstPage />,
-      },
-      {
-        path: "/",
-        element: <JobCategory />,
-        loader: () => fetch("jobCategory.json"),
       },
       {
         path: "statistics",
@@ -33,6 +28,11 @@ const router = createBrowserRouter([
       {
         path: "applied",
         element: <AppliedJob />,
+      },
+      {
+        path: "about/:aboutId",
+        element: <JobDetails />,
+        loader: ({ params }) => fetch(`/featured.json`),
       },
       {
         path: "blog",

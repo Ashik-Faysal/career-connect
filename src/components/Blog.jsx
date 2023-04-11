@@ -4,7 +4,7 @@ import ShowBlog from './ShowBlog';
 
 const Blog = () => {
     const blogs = useLoaderData();
-    console.log(blogs);
+    // console.log(blogs);
     return (
         <div className='mx-24'>
             {

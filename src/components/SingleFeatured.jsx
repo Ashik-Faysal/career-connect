@@ -1,16 +1,15 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
+
+//  export const handleClick = (id) => {
+    // console.log("handleClick" , id)
+//  };
 
 const SingleFeatured = ({ card }) => {
   const { id, logo, jobTitle, brandName, location, salary, jobStyle } = card;
 
-  const handleClick = () => {
-    // Get existing data from local storage or create an empty array
-    const selectedJobs = JSON.parse(localStorage.getItem("selectedJobs")) || [];
-    // Add the current job to the array
-    selectedJobs.push(card);
-    // Save the updated array in local storage
-    localStorage.setItem("selectedJobs", JSON.stringify(selectedJobs));
+ const handleClick = (id) => {
+ console.log("handleClick" , id)
   };
 
   return (
@@ -29,9 +28,9 @@ const SingleFeatured = ({ card }) => {
             <p>{salary}</p>
           </div>
           <div className="card-actions">
-            <button className="btn bg-indigo-500" onClick={handleClick}>
+            <Link to= {`about/${id}`} className="btn bg-indigo-500" onClick={()=>handleClick(id)}>
               Show Details
-            </button>
+            </Link>
           </div>
         </div>
       </div>

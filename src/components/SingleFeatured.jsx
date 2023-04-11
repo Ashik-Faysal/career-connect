@@ -1,7 +1,18 @@
+
 import React from "react";
 
 const SingleFeatured = ({ card }) => {
   const { id, logo, jobTitle, brandName, location, salary, jobStyle } = card;
+
+  const handleClick = () => {
+    // Get existing data from local storage or create an empty array
+    const selectedJobs = JSON.parse(localStorage.getItem("selectedJobs")) || [];
+    // Add the current job to the array
+    selectedJobs.push(card);
+    // Save the updated array in local storage
+    localStorage.setItem("selectedJobs", JSON.stringify(selectedJobs));
+  };
+
   return (
     <div className="bg-white">
       <div className="card w-full h-full bg-base-100 shadow-xl">
@@ -18,11 +29,12 @@ const SingleFeatured = ({ card }) => {
             <p>{salary}</p>
           </div>
           <div className="card-actions">
-            <button className="btn bg-indigo-500">View Details</button>
+            <button className="btn bg-indigo-500" onClick={handleClick}>
+              Show Details
+            </button>
           </div>
         </div>
       </div>
-      ;
     </div>
   );
 };

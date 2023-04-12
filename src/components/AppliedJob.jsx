@@ -30,17 +30,17 @@ const AppliedJob = () => {
   };
 
   return (
-    <div className="m-24">
+    <div className="m-4 md:m-24">
       {/* Render the title */}
       <div className="flex justify-center items-center h-48 bg-stone-300  text-black mb-12">
         <h1 className="text-5xl font-bold">Applied Jobs</h1>
       </div>
       {/* Render the filter dropdown */}
-      <div className="flex justify-end mb-4">
+      <div className="flex justify-end mb-4 mr-4">
         <div className="dropdown">
           <div tabIndex={0} className="btn-group">
-            <button className="btn dropdown-toggle">Filter</button>
-            <ul className="menu dropdown-content">
+            <button className="btn m-1 dropdown-toggle">Filter</button>
+            <ul className="menu dropdown-content mt-12">
               <li>
                 <a
                   onClick={() => handleFilterJobs("Remote")}

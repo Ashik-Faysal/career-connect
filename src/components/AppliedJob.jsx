@@ -12,13 +12,13 @@ const AppliedJob = () => {
   }, []);
 
   return (
-    <div>
-      {
-        jobs.map(job => <ShowApplied
-          job={job}
-          key={job.id}
-        />)
-      }
+    <div className="m-24">
+      <div className="flex justify-center items-center h-48 bg-stone-300  text-black mb-12">
+        <h1 className="text-5xl font-bold">Applied Jobs</h1>
+      </div>
+      {jobs.map((job) => (
+        <ShowApplied job={job} key={job.id} />
+      ))}
     </div>
   );
 };

@@ -4,6 +4,14 @@ import { useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import {
+  DevicePhoneMobileIcon,
+  CurrencyDollarIcon,
+  BriefcaseIcon,
+  EnvelopeIcon,
+  MapPinIcon,
+} from "@heroicons/react/24/solid";
+
 const JobDetails = () => {
   const { aboutId } = useParams();
   const [jobs, setJobs] = useState([]);
@@ -40,61 +48,71 @@ const JobDetails = () => {
   };
 
   return (
-    <div className="mx-4 md:m-24 md:flex gap-8 bg-white text-black">
-      <div className="md:w-[65%] p-8">
-        <p className="mb-4">
-          <span className="text-2xl font-semibold">Job Description: </span>
-          {jobs.jobDescription}
-        </p>
-        <p className="mb-4">
-          <span className="text-2xl font-semibold">Job Responsibility: </span>
-          {jobs.jobResponsibility}
-        </p>
-        <p className="mb-4">
-          <span className="text-2xl font-semibold">
-            Educational Requirement:{" "}
-          </span>
-          {jobs.educationalRequirement}
-        </p>
-        <p className="mb-4">
-          <span className="text-2xl font-semibold">Experiences: </span>
-          {jobs.experience}
-        </p>
+    <>
+      <div className="flex justify-center items-center h-48 bg-stone-300  text-black mb-12">
+        <h1 className="text-5xl font-bold"> Job Details</h1>
       </div>
-      <div className="md:w-[30%] bg-violet-200 p-8 m-4">
-        <h3 className="text-3xl font-bold">Job Details</h3>
-        <div className="border border-gray-500 my-4"></div>
-        <p>
-          <span className="text-2xl">Salary: </span>
-          {jobs.salary}
-        </p>
-        <p>
-          <span className="text-2xl">Job Title: </span>
-          {jobs.jobTitle}
-        </p>
-        <h3 className="text-3xl font-bold">Contact Information</h3>
-        <div className="border border-gray-500 my-4"></div>
-        <p>
-          <span className="text-2xl">Phone: </span>
-          {jobs.phone}
-        </p>
-        <p>
-          <span className="text-2xl">Email: </span>
-          {jobs.email}
-        </p>
-        <p>
-          <span className="text-2xl">Address: </span>
-          {jobs.location}
-        </p>
-        <button
-          onClick={handleApplyNow}
-          className="btn btn-info mx-auto my-8 w-[70%]"
-        >
-          Apply Now
-        </button>
+      <div className="mx-4 md:m-24 md:flex gap-8 bg-white text-black">
+        <div className="md:w-[65%] p-8">
+          <p className="mb-4">
+            <span className="text-2xl font-semibold">Job Description: </span>
+            {jobs.jobDescription}
+          </p>
+          <p className="mb-4">
+            <span className="text-2xl font-semibold">Job Responsibility: </span>
+            {jobs.jobResponsibility}
+          </p>
+          <p className="mb-4">
+            <span className="text-2xl font-semibold">
+              Educational Requirement:{" "}
+            </span>
+            {jobs.educationalRequirement}
+          </p>
+          <p className="mb-4">
+            <span className="text-2xl font-semibold">Experiences: </span>
+            {jobs.experience}
+          </p>
+        </div>
+        <div className="md:w-[30%] bg-violet-200 p-8 m-4">
+          <h3 className="text-3xl font-bold">Job Details</h3>
+          <div className="border border-gray-500 my-4"></div>
+          <p className="flex items-center gap-2">
+            <CurrencyDollarIcon className="h-6 w-6 text-stone-500" />
+            <span className="text-2xl">Salary: </span>
+            {jobs.salary}
+          </p>
+          <p className="flex items-center gap-2">
+            <BriefcaseIcon className="h-6 w-6 text-stone-500" />
+            <span className="text-2xl">Job Title: </span>
+            {jobs.jobTitle}
+          </p>
+          <h3 className="text-3xl font-bold">Contact Information</h3>
+          <div className="border border-gray-500 my-4"></div>
+          <p className="flex items-center gap-2">
+            <DevicePhoneMobileIcon className="h-6 w-6 text-stone-500" />
+            <span className="text-2xl">Phone: </span>
+            {jobs.phone}
+          </p>
+          <p className="flex items-center gap-2">
+            <EnvelopeIcon className="h-6 w-6 text-stone-500" />
+            <span className="text-2xl">Email: </span>
+            {jobs.email}
+          </p>
+          <p className="flex items-center gap-2">
+            <MapPinIcon className="h-6 w-6 text-stone-500" />
+            <span className="text-2xl">Address: </span>
+            {jobs.location}
+          </p>
+          <button
+            onClick={handleApplyNow}
+            className="btn btn-info mx-auto my-8 w-[70%]"
+          >
+            Apply Now
+          </button>
+        </div>
+        <ToastContainer autoClose="2000" />
       </div>
-      <ToastContainer autoClose="2000" />
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import {
+  CurrencyDollarIcon,
+  MapPinIcon,
+} from "@heroicons/react/24/solid";
 //  export const handleClick = (id) => {
     // console.log("handleClick" , id)
 //  };
@@ -24,11 +27,21 @@ const SingleFeatured = ({ card }) => {
             <button className="btn btn-outline">Full Time</button>
           </div>
           <div className="flex">
-            <p>{location}</p>
-            <p>{salary}</p>
+            <p className="flex items-center gap-2">
+              <MapPinIcon className="h-6 w-6 text-stone-500" />
+              <span>{location}</span>
+            </p>
+            <p className="flex items-center gap-2">
+              <CurrencyDollarIcon className="h-6 w-6 text-stone-500" />
+              <span>{salary}</span>
+            </p>
           </div>
           <div className="card-actions">
-            <Link to= {`about/${id}`} className="btn bg-indigo-500" onClick={()=>handleClick(id)}>
+            <Link
+              to={`about/${id}`}
+              className="btn bg-indigo-500"
+              onClick={() => handleClick(id)}
+            >
               Show Details
             </Link>
           </div>

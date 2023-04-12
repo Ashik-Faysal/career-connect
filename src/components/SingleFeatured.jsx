@@ -9,7 +9,7 @@ const SingleFeatured = ({ card }) => {
   const { id, logo, jobTitle, brandName, location, salary, jobStyle } = card;
 
  const handleClick = (id) => {
- console.log("handleClick" , id)
+//  console.log("handleClick" , id)
   };
 
   return (

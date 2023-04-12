@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 const JobDetails = () => {
   const {aboutId}= useParams()
 const [jobs, setJobs] = useState([]);
-console.log(jobs);
+// console.log(jobs);
 useEffect(() => {
   fetch("/featured.json")
     .then((res) => res.json())
@@ -14,6 +14,24 @@ useEffect(() => {
       setJobs(jobData);
     });
 }, [aboutId]);
+
+  const handleApplyNow = () => {
+    // Get the current job data from localStorage or initialize an empty array
+    const jobData = JSON.parse(localStorage.getItem("jobData") || "[]");
+
+    // Add the current job to the array of job data
+    jobData.push(jobs);
+
+    // Generate a unique key using the current timestamp
+    // const key = `jobData_${Date.now()}`;
+
+    // Store the array of job data under the unique key
+    localStorage.setItem("jobData", JSON.stringify(jobData));
+
+    // Alert the user that the job data has been saved
+    alert("Job data has been saved to local storage.");
+  };
+
   return (
     <div className="mx-4 md:m-24 md:flex gap-8 bg-white text-black">
       <div className="md:w-[65%] p-8">
@@ -61,7 +79,12 @@ useEffect(() => {
           <span className="text-2xl">Address: </span>
           {jobs.location}
         </p>
-        <button className="btn btn-info mx-auto my-8 w-[70%]">Apply Now</button>
+        <button
+          onClick={handleApplyNow}
+          className="btn btn-info mx-auto my-8 w-[70%]"
+        >
+          Apply Now
+        </button>
       </div>
     </div>
   );

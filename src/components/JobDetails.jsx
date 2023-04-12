@@ -1,32 +1,42 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const JobDetails = () => {
-  const {aboutId}= useParams()
-const [jobs, setJobs] = useState([]);
-// console.log(jobs);
-useEffect(() => {
-  fetch("/featured.json")
-    .then((res) => res.json())
-    .then((data) => {
-      const jobData = data.find((job) => job.id == aboutId );
-      setJobs(jobData);
-    });
-}, [aboutId]);
+  const { aboutId } = useParams();
+  const [jobs, setJobs] = useState([]);
+  // console.log(jobs);
+  useEffect(() => {
+    fetch("/featured.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const jobData = data.find((job) => job.id == aboutId);
+        setJobs(jobData);
+      });
+  }, [aboutId]);
 
   const handleApplyNow = () => {
     // Get the current job data from localStorage or initialize an empty array
     const jobData = JSON.parse(localStorage.getItem("jobData") || "[]");
 
-    // Add the current job to the array of job data
-    jobData.push(jobs);
+    // Check if the job ID is already in the saved data
+    const jobExists = jobData.some((job) => job.id === jobs.id);
 
-    // Store the array of job data under the unique key
-    localStorage.setItem("jobData", JSON.stringify(jobData));
+    if (!jobExists) {
+      // Add the current job to the array of job data
+      jobData.push(jobs);
 
-    // Alert the user that the job data has been saved
-    alert("Job data has been saved to local storage.");
+      // Store the array of job data under the unique key
+      localStorage.setItem("jobData", JSON.stringify(jobData));
+
+      // Alert the user that the job data has been saved
+      toast.success("Job data has been saved to local storage.");
+    } else {
+      // Alert the user that the job data has already been saved
+      toast.warning("Job data has already been saved to local storage.");
+    }
   };
 
   return (
@@ -83,6 +93,7 @@ useEffect(() => {
           Apply Now
         </button>
       </div>
+      <ToastContainer autoClose="2000" />
     </div>
   );
 };

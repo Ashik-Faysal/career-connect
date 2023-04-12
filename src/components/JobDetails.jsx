@@ -49,7 +49,7 @@ const JobDetails = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center h-48 bg-stone-300  text-black mb-12">
+      <div className="flex justify-center items-center h-48 bg-stone-300 mb-12">
         <h1 className="text-5xl font-bold"> Job Details</h1>
       </div>
       <div className="mx-4 md:m-24 md:flex gap-8 bg-white text-black">
@@ -73,7 +73,7 @@ const JobDetails = () => {
             {jobs.experience}
           </p>
         </div>
-        <div className="md:w-[30%] bg-violet-200 p-8 m-4">
+        <div className="md:w-[30%] bg-violet-50 p-8 card m-4">
           <h3 className="text-3xl font-bold">Job Details</h3>
           <div className="border border-gray-500 my-4"></div>
           <p className="flex items-center gap-2">
@@ -105,7 +105,7 @@ const JobDetails = () => {
           </p>
           <button
             onClick={handleApplyNow}
-            className="btn btn-info mx-auto my-8 w-[70%]"
+            className="btn bg-violet-500 mx-auto my-8 w-full"
           >
             Apply Now
           </button>

@@ -14,7 +14,7 @@ const TopBody = () => {
           need. Its your future. Come find it. Manage all your job application
           from start to finish.
         </p>
-        <Link className=" btn bg-indigo-300 text-white">Get Started</Link>
+        <Link className=" btn bg-violet-500">Get Started</Link>
       </div>
       <div className="mx-auto">
         <img

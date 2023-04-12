@@ -15,7 +15,7 @@ const Statistics = () => {
       .then((res) => res.json())
       .then((data) => setChart(data));
   }, []);
-  console.log(chart.marks);
+  // console.log(chart.marks);
   return (
     <RadarChart
       className="mx-auto mb-56"

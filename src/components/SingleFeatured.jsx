@@ -39,7 +39,7 @@ const SingleFeatured = ({ card }) => {
           <div className="card-actions">
             <Link
               to={`about/${id}`}
-              className="btn bg-indigo-500"
+              className="btn bg-violet-500"
               onClick={() => handleClick(id)}
             >
               Show Details

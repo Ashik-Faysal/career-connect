@@ -7,7 +7,7 @@ import {
   Radar,
 } from "recharts";
 
-const Chart = () => {
+const Statistics = () => {
   const [chart, setChart] = useState([]);
   useEffect(() => {
     fetch("assignment.json")
@@ -31,4 +31,4 @@ const Chart = () => {
   );
 };
 
-export default Chart;
+export default Statistics;

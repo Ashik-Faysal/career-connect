@@ -15,13 +15,18 @@ const AppliedJob = () => {
 
   // Filter jobs based on type and update filtered jobs state
   const handleFilterJobs = (type) => {
-    if (type == "Remote") {
-      setFilteredJobs(jobs.filter((job) => job.type == "Remote"));
-    } else if (type == "OnSite") {
-      setFilteredJobs(jobs.filter((job) => job.type == "OnSite"));
+    if (type === "Remote") {
+      setFilteredJobs(jobs.filter((job) => job.jobStyle === "Remote"));
+    } else if (type === "OnSite") {
+      setFilteredJobs(jobs.filter((job) => job.jobStyle === "OnSite"));
     } else {
       setFilteredJobs(jobs);
     }
+  };
+
+  // Clear the filter and show all jobs
+  const clearFilter = () => {
+    setFilteredJobs(jobs);
   };
 
   return (
@@ -33,26 +38,38 @@ const AppliedJob = () => {
       {/* Render the filter dropdown */}
       <div className="flex justify-end mb-4">
         <div className="dropdown">
-          <label tabIndex={0} className="btn m-1">
-            Filter
-          </label>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              {/* Apply the "Remote" filter */}
-              <a onClick={() => handleFilterJobs("Remote")}>Remote</a>
-            </li>
-            <li>
-              {/* Apply the "OnSite" filter */}
-              <a onClick={() => handleFilterJobs("OnSite")}>OnSite</a>
-            </li>
-            <li>
-              {/* Clear the filter */}
-              <a onClick={() => setFilteredJobs(jobs)}>Clear Filter</a>
-            </li>
-          </ul>
+          <div tabIndex={0} className="btn-group">
+            <button className="btn dropdown-toggle">Filter</button>
+            <ul className="menu dropdown-content">
+              <li>
+                <a
+                  onClick={() => handleFilterJobs("Remote")}
+                  className={
+                    filteredJobs.length && filteredJobs[0].jobStyle === "Remote"
+                      ? "active"
+                      : ""
+                  }
+                >
+                  Remote
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => handleFilterJobs("OnSite")}
+                  className={
+                    filteredJobs.length && filteredJobs[0].jobStyle === "OnSite"
+                      ? "active"
+                      : ""
+                  }
+                >
+                  OnSite
+                </a>
+              </li>
+              <li>
+                <a onClick={clearFilter}>Clear</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       {/* Render each job in the filtered jobs array */}

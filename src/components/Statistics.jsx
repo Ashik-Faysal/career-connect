@@ -5,18 +5,24 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   Radar,
+  Tooltip,
 } from "recharts";
 
 const Statistics = () => {
   const [chart, setChart] = useState([]);
   useEffect(() => {
     fetch("assignment.json")
-    .then(res=>res.json())
-    .then(data=>setChart(data));
-  }, [])
+      .then((res) => res.json())
+      .then((data) => setChart(data));
+  }, []);
   console.log(chart.marks);
   return (
-    <RadarChart className="mx-auto mb-56" width={600} height={400} data={chart.marks}>
+    <RadarChart
+      className="mx-auto mb-56"
+      width={600}
+      height={400}
+      data={chart.marks}
+    >
       <PolarGrid />
       <PolarAngleAxis dataKey="name" />
       <PolarRadiusAxis />
@@ -27,6 +33,7 @@ const Statistics = () => {
         fill="#8884d8"
         fillOpacity={0.6}
       />
+      <Tooltip />
     </RadarChart>
   );
 };

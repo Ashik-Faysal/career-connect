@@ -22,9 +22,6 @@ useEffect(() => {
     // Add the current job to the array of job data
     jobData.push(jobs);
 
-    // Generate a unique key using the current timestamp
-    // const key = `jobData_${Date.now()}`;
-
     // Store the array of job data under the unique key
     localStorage.setItem("jobData", JSON.stringify(jobData));
 

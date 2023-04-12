@@ -25,7 +25,7 @@ const ShowApplied = ({ job }) => {
           </div>
         </div>
         <div>
-          <button className="btn btn-info">View Details</button>
+          <button className="btn btn-info">Show Details</button>
         </div>
       </div>
     );

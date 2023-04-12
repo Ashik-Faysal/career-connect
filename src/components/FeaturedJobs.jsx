@@ -26,7 +26,7 @@ const FeaturedJobs = () => {
           need. Its your future
         </p>
       </div>
-      <div className="grid md:grid-cols-2 gap-4 px-32">
+      <div className="grid md:grid-cols-2 gap-4 md:px-32">
         {featured.slice(0, numToShow).map((card) => (
           <SingleFeatured card={card} key={card.id} />
         ))}

@@ -31,7 +31,7 @@ const AppliedJob = () => {
         <h1 className="text-5xl font-bold">Applied Jobs</h1>
       </div>
       {/* Render the filter dropdown */}
-      <div className="flex justify-end">
+      <div className="flex justify-end mb-4">
         <div className="dropdown">
           <label tabIndex={0} className="btn m-1">
             Filter

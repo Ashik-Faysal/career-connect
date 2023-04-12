@@ -16,8 +16,8 @@ const SingleFeatured = ({ card }) => {
   };
 
   return (
-    <div className="bg-white">
-      <div className="card w-full h-full bg-base-100 shadow-xl">
+    <div>
+      <div className="card w-full border h-full bg-base-100 shadow-xl">
         <div className="card-body">
           <img className="w-16" src={logo} alt="" />
           <h2 className="card-title">{jobTitle}</h2>

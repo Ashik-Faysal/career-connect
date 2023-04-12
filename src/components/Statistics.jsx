@@ -16,7 +16,7 @@ const Statistics = () => {
   }, [])
   console.log(chart.marks);
   return (
-    <RadarChart className="mx-auto" width={600} height={400} data={chart.marks}>
+    <RadarChart className="mx-auto mb-56" width={600} height={400} data={chart.marks}>
       <PolarGrid />
       <PolarAngleAxis dataKey="name" />
       <PolarRadiusAxis />
